@@ -1,0 +1,37 @@
+# Filename: my.kv 
+
+<MyGrid>:
+    
+
+    wImage:wImage
+    wText:wText
+    tText:tText
+    
+    GridLayout:
+        cols: 1
+        size: root.width, root.height
+        
+        GridLayout:
+            cols: 2
+            size: root.width,root.height
+            padding: [10,10]
+
+            Image:
+                id: wImage
+                source:"Clear.png"
+                size_hint_y: None
+                height: dp(200)
+                size_hint_x: None
+                width: dp(200)
+                allow_stretch: True
+            Label:
+                id: wText
+                text:"Default Text"
+                font_size: 40
+                padding: [10,10]
+        Label:
+            id: tText
+            text:"Default Text"
+            font_size: 25
+
+        
